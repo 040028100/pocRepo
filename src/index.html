@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Feedback form</title>
+		<link rel="stylesheet" type="text/css" href="css/feedback.css"></link>
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js"/></script>
+		<script type="text/javascript" src="js/feedback.js"/></script>
+	</head>
+	<body>
+	<div class="headerText">
+		<h2>Front-End CICD POC Page</h2>
+	</div>
+	<div class="desc">
+		Intent of this POC is to provide a CICD solution that would automate the JS and CSS CQ pushes
+	</div>
+	<div class="expectedWF">
+		<div class="wfList">
+			<h2>Expected workflow</h2>
+			<ol>
+				<li><a href="#" metadata="commit">File Commit</a></li>
+				<li><a href="#" metadata="grunt">Grunt Tasks</a></li>
+				<li><a href="#" metadata="test">Test Script Execution</a></li>
+				<li><a href="#" metadata="coverage">Code coverage script</a></li>
+				<li><a href="#" metadata="image">Image Optimization</a></li>
+				<li><a href="#" metadata="cq">CQ push</a></li>
+				<li><a href="#" metadata="performace">Performance tests</a></li>
+				<li><a href="#" metadata="visual">Visual Regression</a></li>
+			</ol>
+		</div>
+		<div class="wfDesc">
+			<div class="wfDescContent"></div>
+		</div>
+	</div>
+	<div class="feedbackContainer">
+		<div class="feedback">
+			<div class="form-style-2">
+				<div class="form-style-2-heading">Feedback Form</div>
+				<form action="" method="post">
+				<label for="field1"><span>Name <span class="required">*</span></span><input type="text" class="input-field" name="field1" value="" /></label>
+				<label for="field2"><span>Email <span class="required">*</span></span><input type="text" class="input-field" name="field2" value="" /></label>
+				<label><span>Telephone</span><input type="text" class="tel-number-field" name="tel_no_1" value="" maxlength="4" />-<input type="text" class="tel-number-field" name="tel_no_2" value="" maxlength="4"  />-<input type="text" class="tel-number-field" name="tel_no_3" value="" maxlength="10"  /></label>
+				<label for="field4"><span>Regarding</span><select name="field4" class="select-field">
+				<option value="Compliments">Compliments</option>
+				<option value="Suggestions">Suggestions</option>
+				<option value="General">General</option>
+				</select></label>
+				<label for="field5"><span>Message <span class="required">*</span></span><textarea name="field5" class="textarea-field"></textarea></label>
+
+				<label><span>&nbsp;</span><input type="button" id="submitComment" value="Submit" /></label>
+				</form>
+			</div>
+		</div>
+		<div class="comments">
+			<div class="comment">
+				<div class="commentHeader">
+					<div class="commentName">Robinson</div>
+					<div class="commentEmail">Robinson@email.com</div>
+					<div class="commentPhone">123456789</div>
+					<div class="commentRegarding">General</div>
+				</div>
+				<div class="commentContent">hello world</div>
+			</div>
+		</div>
+	</div>
+	</body>
+</html>
